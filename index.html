@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Anamika | My Portfolio</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, lightblue, lavender);
+            color: #222;
+        }
+
+        nav {
+            background-color: white;
+            padding: 18px 10px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            color: darkblue;
+            text-decoration: none;
+            margin: 8px 12px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            color: purple;
+        }
+
+        .hero {
+            background-color: white;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 50px 25px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .hero h1 {
+            color: darkblue;
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            line-height: 1.6;
+        }
+
+        .box {
+            background-color: white;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: navy;
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .skill {
+            background-color: lavender;
+            padding: 20px;
+            width: 200px;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .skill:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+        .skill h3 {
+            color: darkblue;
+        }
+
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .project {
+            background-color: #f5f5ff;
+            width: 250px;
+            padding: 25px;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .project h3 {
+            color: darkblue;
+        }
+
+        .project p {
+            line-height: 1.5;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: darkblue;
+            color: white;
+            padding: 11px 20px;
+            margin-top: 10px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background-color: purple;
+            transform: scale(1.05);
+        }
+
+        .contact-text {
+            font-size: 18px;
+        }
+
+        footer {
+            background-color: darkblue;
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+
+            nav a {
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .box {
+                margin: 20px 10px;
+                padding: 20px;
+            }
+
+            .skill,
+            .project {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+    <div class="hero" id="home">
+
+        <h1>Hi, I'm Anamika 👋</h1>
+
+        <p>
+            A student learning Programming,
+            Data Structures and Data Analysis.
+        </p>
+
+        <p>
+            I love learning new technology
+            and building useful projects.
+        </p>
+
+        <a href="#projects" class="button">
+            🚀 View My Projects
+        </a>
+
+    </div>
+
+
+    <div class="box" id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            I am a student learning Python, C++,
+            Data Structures and Data Analysis.
+        </p>
+
+        <p>
+            I am interested in technology,
+            programming and building useful projects.
+        </p>
+
+    </div>
+
+
+    <div class="box" id="skills">
+
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">
+                <h3>🐍 Python</h3>
+                <p>
+                    Programming, NumPy,
+                    Pandas and Data Analysis
+                </p>
+            </div>
+
+            <div class="skill">
+                <h3>💻 C++</h3>
+                <p>
+                    Programming, OOP
+                    and problem solving
+                </p>
+            </div>
+
+            <div class="skill">
+                <h3>🧩 Data Structures</h3>
+                <p>
+                    Arrays, Linked Lists,
+                    Stack, Queue, Trees and Sorting
+                </p>
+            </div>
+
+            <div class="skill">
+                <h3>📊 Data Analysis</h3>
+                <p>
+                    Data cleaning,
+                    analysis and visualization
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="box" id="projects">
+
+        <h2>My Projects</h2>
+
+        <div class="projects-container">
+
+
+            <div class="project">
+
+                <h3>🐍 Python Project</h3>
+
+                <p>
+                    Student Marks Calculator
+                    using Python.
+                </p>
+
+                <a href="https://github.com/anamika005yadav-spec/python-project"
+                   class="button"
+                   target="_blank">
+                    View Project
+                </a>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>💻 C++ & DSA</h3>
+
+                <p>
+                    Programs based on Data Structures
+                    and Algorithms using C++.
+                </p>
+
+                <a href="https://github.com/anamika005yadav-spec/cpp-dsa-sorting"
+                   class="button"
+                   target="_blank">
+                    View Project
+                </a>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>📊 Data Analysis</h3>
+
+                <p>
+                    Analysing data using Python,
+                    Pandas, NumPy and Matplotlib.
+                </p>
+
+                <a href="https://github.com/anamika005yadav-spec/student-marks-analysis"
+                   class="button"
+                   target="_blank">
+                    View Project
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <div class="box" id="contact">
+
+        <h2>Contact Me</h2>
+
+        <p class="contact-text">
+            Want to connect with me?
+        </p>
+
+        <a href="mailto:your-email@gmail.com"
+           class="button">
+            📧 Email Me
+        </a>
+
+    </div>
+
+
+    <footer>
+
+        <p>
+            © 2026 Anamika | My Portfolio
+        </p>
+
+        <p>
+            Made with HTML & CSS ❤️
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
